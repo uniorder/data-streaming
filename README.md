@@ -1272,7 +1272,7 @@ public class RabbitStreamingJob {
                 .setPort(5672)
                 .setVirtualHost("iothub")
                 .setUserName("iothub")
-                .setPassword("b1D3+x^X2cs")
+                .setPassword("------")
                 .build();
 
         // 定义数据源
