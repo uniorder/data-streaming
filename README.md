@@ -52,7 +52,6 @@
     + [Flink 入口函数的指定](#flink-入口函数的指定-)
     + [Flink 发布 Job](#flink-发布-job)
   * [Flink SQL Gateway](#flink-sql-gateway)
-  * [关于 Flink 的遗漏问题](#关于-flink-的遗漏问题)
   * [Doris 的安装](#doris-的安装)
     + [从 MySQL 导入数据](#从-mysql-导入数据)
     + [Doris SQL 注意事项](#doris-sql-注意事项)
@@ -652,7 +651,7 @@ key的反序列化类，这个配置我们在 `connect-distributed.properties` �
 
 ### errors.retry.delay.max.ms
 
-连续重试尝试之间的最大持续时间（以毫秒为单位）。 一旦达到此限制，抖动将被添加到延迟中，以防止雷鸣般的羊群问题。
+连续重试尝试之间的最大持续时间（以毫秒为单位）。 一旦达到此限制，抖动将被添加到延迟中。
 
 ### errors.tolerance
 
@@ -2108,21 +2107,6 @@ Content-Type: application/json
     "nextResultUri": "/v1/sessions/3185cef4-b100-4109-a8d8-ce02eb35be96/operations/bbd4a15c-ea77-45a6-9aa0-62061e53da19/result/1"
 }
 ```
-
-## 关于 Flink 的遗漏问题
-
-后续，就需要基于上面所描述的基础，开展基于 Flink 的实际生产工作，可能会包括但不限于以下基本概念：
-
-1. 流处理和批处理相关API的运用
-2. 状态处理器
-3. 算子和窗口
-4. 检查点和保存点
-5. 时态和水位线
-6. Table API & SQL 的高级使用，例如 Join 等
-7. Catalogs
-8. Hive
-9. 复杂事件处理 —— CEP
-10. Flink 的管理类 REST API 的应用
 
 ## Doris 的安装
 
